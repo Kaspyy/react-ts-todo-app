@@ -18,7 +18,7 @@ export const TodosContext = React.createContext<TodosContextType>({
   removeTodo: (id: string) => {},
 });
 
-const TodosContextProvider: React.FC<TodosContextProps> = ({ children }) => {
+const TodosContextProvider = ({ children }: TodosContextProps) => {
   const [todos, setTodos] = useState<Todo[]>([]);
 
   const addTodoHandler = (todoText: string) => {

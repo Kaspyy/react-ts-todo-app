@@ -1,9 +1,9 @@
-import { FC, useRef, useContext } from 'react';
+import { useRef, useContext } from 'react';
 
 import { TodosContext } from '../context/todos-context';
 import classes from './NewTodo.module.css';
 
-const NewTodo: FC = () => {
+const NewTodo = () => {
   const todoTextInputRef = useRef<HTMLInputElement>(null);
   const todosCtx = useContext(TodosContext);
 
